@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* if set then it will keep the original size of box content shrink
+            if not set then it will update the original size of box whenever padding n all added */
+            box-sizing: border-box;
+            
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 100px;
+            /* block to inline */
+            display: inline;
+        }
+
+        
+        .hu{
+            border: 1px solid red;
+            width: 300px;
+            height: 300px;
+            margin: 25px;
+            padding: 4px;
+            
+        }
+        span{
+            border: 2px solid green;
+            width: 300px;
+            height: 300px;
+            margin: 25px;
+            padding: 25px;
+            /* inline to block element conversion */
+            display: block;
+            
+        }
+        .jii{
+             border: 2px solid green;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            padding: 25px;
+            /* act as inline with all custom property */
+            display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- /* block elemenet
+        1. new line
+        2. all space left to right
+        3. respect custom height width
+        4. respect cutom margin padding */ -->
+    <div class="hu">Welcome here</div>
+    <div class="hu">Namaskar</div>
+    <div class="box">
+        Welcome to box sizing border box
+    </div>
+
+    <!-- inline elemeent
+     1. try to lie on same line
+     2.width take as per content 
+     3. dont respect cutsom height width
+     4. custom margin dont respect
+     5. custom padding respect-->
+    <span>
+        this is for inline
+    </span>
+    <span>
+        new span 
+    </span>
+    <span class="jii">
+        new span for understanding inline block
+    </span>
+    <span class="jii">
+        new span for understanding inline block
+    </span>
+</body>
+</html>

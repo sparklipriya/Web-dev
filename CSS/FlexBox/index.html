@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            height: 500px;
+            padding: 2px;
+            /* default flex direction row */
+            display: flex;
+            /* flex-direction : column , row-reverse, column-reverse,  */
+
+            /* flex-wrap maintain the width till it is available bring content to next line( wrpping on)
+            default - nowrap, wrap-reverse */ 
+            flex-wrap: wrap;
+
+            /* horizontal center place work around main axis
+            start, end, center, space-between, space-around, space-evenly */
+            /* justify-content: center; */
+
+            /* align-items: work around cross axis 
+            center, start, end, stretch(default)*/
+            align-items: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: black;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex container, flex item, cross axis, main axis -->
+     <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+     </div>
+</body>
+</html>

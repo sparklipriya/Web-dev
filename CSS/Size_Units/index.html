@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid rgb(76, 215, 90);
+            /* % - of the parent body that is body */
+            width: 25%;
+           
+        }
+        .parent{
+            border: 2px solid blue;
+            background-color:red;
+            width: 50%;
+        }
+        .child{
+            border: 1px solid bisque;
+            background-color: blue;
+            width: 20%;
+        }
+        .container{
+            background-color: beige;
+            border: 4px solid hotpink;
+            height: 100vh;
+            width: 50vw;
+        }
+        .box2{
+            border: 1px solid black;
+            font-size: 100px;
+            
+
+        }
+        .wrapper{
+            /* em multiplies with the deafult font size as default is 16px  */
+            font-size: 1em;
+        }
+        .px{
+            width: 200px;
+        } 
+        .vw{
+            width: 10vw;
+        }
+        .em{
+            /* width becomes 160px */
+            width: 10em;
+        }
+        .container2{
+           font-size: 10px;
+
+        }
+        .box4{
+           font-size: 10em;
+        }
+        .ye{
+            border: 1px solid hotpink;
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Wecome to size units
+    </div>
+    <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+    <div class="container">
+        2 size unit view port
+    </div>
+    <div class="box2">
+        pixel size unit
+    </div>
+    <div class="wrapper">
+        <div class="box px">It is 200px wide</div>
+        <div class="box vm">It is 10vm wide</div>
+        <div class="box em">It is 10em wide</div>
+    </div>
+    <p>Hello Jii</p>
+    <div class="container2">
+        <div class="box4">
+            understanding em
+        </div>
+    </div>
+    <p class="ye">
+        rem understanding
+    </p>
+</body>
+</html>

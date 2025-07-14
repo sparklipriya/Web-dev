@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border: 1px solid black;
+    }
+    img{
+    
+        margin: 10px;
+    }
+    .im2{
+        /* Relative Positioning: 
+        1.current window ke basis pe position hoga
+        2.top left right bottom se spacing final ho
+        3.gap is maintained */
+        position: relative;
+        top: 100px;
+        left: 100px;
+    }
+    .im3{
+        /* absolute positionion:overlapping 
+        1. closest position ancestor 
+        2. gap not mainatained*/
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+    .im4{
+        /* /* fixed positioning 
+        1. image intact throughout the pages 
+        2. fixed based on window/* */
+        position: fixed;
+    }
+    .container{
+        position: relative;
+        height: 800px;
+        background-color: aquamarine;
+    }
+    .im1{
+        /* sticky 
+        1.position sticky 
+        2. fixed on basis of parent element*/
+        position: sticky;
+        top: 100px;
+    }
+    .box{
+        background-color: blue;
+        height: 500px;
+    }
+</style>
+<body>
+    <div class="container">
+        <img src="img1.jpg" alt="image 1" width="200px" height="200px" class="im1">
+        <img src="img2.png" alt="image 2" width="200px" height="200px" class="im2">
+        <img src="img3.jpg" alt="image 3" width="200px" height="200px" class="im3">
+        <img src="img4.jpg" alt="image 4" width="200px" height="200px" class="im4">
+
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
