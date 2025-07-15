@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            border: 2px solid black;
+            transition-property: all;
+            transition-duration: 4s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out;
+            /* shorthand notation
+            property name | duration | easing function | delay
+             */
+             
+        }
+        .box:hover{
+            width: 1200px;
+            height: 1600px;
+            background-color: red;
+        }
+    </STYLE>
+</head>
+<body>
+    <!-- when we switch from  state 1 to state 2 it is transition
+     transition has single switch
+     animation has series of complex movements - multiple transistion -->
+     <div class="box">
+
+     </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: aqua;
+            height: 400px;
+            width: 400px;
+            border: 3px solid black;
+        }
+        /* <!-- tool to define or put any condition in which display my dimensions should be
+      how same website render on different devices --> */
+        @media (min-width: 300px) and (max-width: 500px) {
+            .box{
+               background-color: green;
+            }
+        }
+        @media (min-width: 640px){
+            .container{
+                flex-direction: row;
+            }
+        }
+        @media (max-width: 640px){
+            .container{
+                flex-direction: column;
+            }
+        }
+       
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display : flex;
+            
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            margin: 2px;
+            padding: 2px;
+        }
+        #b{
+            background-color: hotpink;
+        }
+        #b1{
+            background-color: gold;
+        }
+        #b2{
+            background-color: gray;
+        }
+        #b3{
+            background-color: saddlebrown;
+        }
+
+        .con1{
+            border: 1px solid black;
+            background-color: hotpink;
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+            padding: 2px;
+            margin: 10px;
+        }
+        #g1{
+            background-color: gray;
+            border: 1px solid tan;
+            width: 48%;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+        #g2{
+            background-color: aqua;
+            border: 1px solid red;
+            width: 48%;
+            margin: 3px;
+            padding: 2px;
+        }
+        p{
+            border: 1px solid rebeccapurple;
+        }
+        img{
+            width: 170px;
+        }
+         @media (max-width: 640px) {
+            .con1{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- example 1 -->
+      <div class="box">
+        Helloe
+
+      </div>
+
+<!-- example 2 -->
+      <div class="container">
+        <div class="box1" id="b"></div>
+        <div class="box1" id="b1"></div>
+        <div class="box1" id="b2"></div>
+        <div class="box1" id="b3"></div>
+      </div>
+
+      <!-- example 3 -->
+       <div class="con1">
+        <div id="g1">
+            <p id="t1">Text 1</p>
+            <p id="t2">Text 2</p>
+        </div>
+        <div id="g2">
+            <img src="img1.jpg" alt="Image">
+        </div>
+       </div>
+</body>
+</html>

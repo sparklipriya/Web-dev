@@ -17,7 +17,7 @@
 
             /* flex-wrap maintain the width till it is available bring content to next line( wrpping on)
             default - nowrap, wrap-reverse */ 
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
 
             /* horizontal center place work around main axis
             start, end, center, space-between, space-around, space-evenly */
@@ -26,6 +26,8 @@
             /* align-items: work around cross axis 
             center, start, end, stretch(default)*/
             align-items: center;
+            /* aign-content : arrange the content  */
+            align-content: start;
         }
         .box{
             height: 200px;
@@ -36,25 +38,36 @@
         }
         #box1{
             background-color: aqua;
+            /* order - can change the order of the flex item */
+            order: 500;
+            flex-shrink: 4;
+            
         }
         #box2{
-            background-color: black;
+            background-color: pink;
+            flex-grow: 5;
         }
         #box3{
             background-color: orange;
+            /* flex-basis : set the basic dimension - width*/
+            flex-basis: 400px;
         }
         #box4{
             background-color: brown;
+            order: 1;
+            /* align-self: work on cross axis; */
+            align-self: start;
+            
         }
     </style>
 </head>
 <body>
     <!-- flex container, flex item, cross axis, main axis -->
      <div class="container">
-        <div class="box" id="box1"></div>
-        <div class="box" id="box2"></div>
-        <div class="box" id="box3"></div>
-        <div class="box" id="box4"></div>
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
      </div>
 </body>
 </html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: gainsboro;
+            border: 5px solid black;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: hotpink;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid black;
+
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            /* linear ease-in ease-out cubic-bezier */
+            animation-timing-function: cubic-bezier(1, -0.22, 1, 0.37);
+            /* reverse alternate-reverse  */
+            animation-direction: alternate;
+            /* film-mode : what to do before first key frame and after last key frame 
+            forwards backwards*/
+            animation-fill-mode: backwards;
+
+            /* shorthand notation
+            @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name 
+             */
+             animation: 5s linear 1s infinite alternate none running rightMovement;
+        }
+        @keyframes rightMovement {
+            from{ 
+                 top: 0;
+                 left: 0;
+
+            }
+            to{
+                 top: 0;
+                 left: 900px;
+            }
+            
+        }
+        .box2{
+             width: 350px;
+            height: 80px;
+            background-color: hotpink;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid black;
+            animation: 5s ease-in 1s infinite alternate none running leftMovement;
+
+
+        }
+        @keyframes leftMovement {
+            from{ 
+                 top: 400px;
+                 left: 900px;
+
+            }
+            to{
+                 top: 400px;
+                 left: 0px;
+            }
+            
+        }
+        #circle{
+             width: 50px;
+            height: 50px;
+            background-color: hotpink;
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid black;
+            top: 70px;
+            left: 500px;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+        }
+        @keyframes circleMovement {
+            0%{
+                top: 0.01%;
+                left: 5%;
+            }
+            30%{
+                top: 1%;
+                left: 90%;
+
+            }
+            60%{
+               top:45%;
+               left: 10%;
+            }
+            100%{
+                top: 45%;
+                left: 90%;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- when any element shift from one style to another style it is called animation -->
+     <div class="container">
+          <div class="box">
+
+          </div>
+          <div class="box2"></div>
+          <div id="circle"></div>
+     </div>
+</body>
+</html>

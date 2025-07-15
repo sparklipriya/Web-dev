@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* variable defined in root can be used anywhere */
+            --primary-color: red;
+        }
+        .container{
+            background-color: var(--primary-color);
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            /* custom variable utilized within this block only*/
+            --primary-color: brown;
+            --custom-width: 330px;
+
+
+            background-color: gold;
+
+            /* custom variable use */
+            width: var(--custom-width);
+
+            height: 330px;
+            border: 1px solid brown;
+            margin: 5px;
+            padding: 5px;
+            /* x-offset y-offset */
+            /* negative value in opposite direction  */
+            box-shadow: 10px -15px green;
+            /* blur pixel 
+            negative not allowed*/
+            box-shadow: 10px 15px 50px gold;
+            /* spread radius */
+            box-shadow: 10px 15px 35px 16px darkblue;
+            /* shadow in inside direction */
+            box-shadow: inset 10px 15px tan;
+            /* multiple shadow apply */
+            box-shadow: 10px 15px red, 15px 8px var(--primary-color);
+            
+        }
+        #head1{
+            /* text shadow */
+            text-shadow: 2px 3px 2px white;
+            text-shadow: green 2px 3px 2px;
+            text-shadow: white 2px 3px;
+            /* default shadow color is black */
+            text-shadow: 2px 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="img1.jpg" alt="Image">
+            <h2 id="head1">Welcome to learning</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolore, accusantium minima fugiat esse illum blanditiis, illo tempore, possimus aliquam corporis officiis repellendus fugit nostrum.</p>
+        </div>
+    </div>
+</body>
+</html>
