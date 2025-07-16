@@ -1,0 +1,29 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: gainsboro;
+    border: 12px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 2s ease-in-out 0s;
+}
+.box:hover{
+    transform: rotate(360deg);
+    transform: scale(0.25);
+    transform: rotate(-45deg);
+    /* tilt */
+    transform: skew(45deg);
+    transform: translate(500px , 500px);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+p{
+    font-size: 28px;
+}
