@@ -15,8 +15,8 @@ html, body{
     align-items: center;
 }
 .container .card{
-    width: 300px;
-    height: 400px;
+    width: 280px;
+    height: 500px;
     background-color:white;
     border-radius: 20px;
     border: 2px solid black;
