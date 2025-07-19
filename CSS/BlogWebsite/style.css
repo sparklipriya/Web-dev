@@ -34,6 +34,8 @@ a{
 .main_container{
     display: grid;
     gap: 1.5rem;
+    /* justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 400px)); */
     grid-template-columns: repeat(1,1fr);
     
 }
