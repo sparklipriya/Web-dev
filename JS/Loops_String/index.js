@@ -116,4 +116,40 @@ console.log(word);
 console.log(word.join('-'));
 
 
+// for-each
+let a = [10,20,30]
+a.forEach((val,index)=>{
+console.log("number : " + val, "Index : " + index)})
+
+// for-in 
+// enumerable property pe iterate
+let obj = {
+    name : 'Priya',
+    "full name" : 'Priya Yadav',
+    age : 23,
+    weight : 47,
+    height : "5ft 1inch",
+    greet : function() {
+        console.log("Hello everyone")
+    }
+
+};
+for(let key in obj){
+    console.log(key, " ", obj[key])
+}
+
+// for-of
+// iterable object - array,string
+let ar = [10,20,30]
+for(let val of ar){
+    console.log(val);
+}
+let fullName = "priyayadav"
+for(let val of fullName){
+    console.log(val)
+}
+
+
+
+
 
