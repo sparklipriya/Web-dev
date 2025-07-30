@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- event - announcement by browser -->
+     <!-- event-target - event entity where the event is received
+      event-listener - location where it is written what the action perform  
+      SYNTAX :  eventTarget.addEventListener('eventType',eventListener)
+      Element : addEventListener() - by default apply to bubbling phase  -- if want to add in capture phase set true to useCapture
+                removeEventListener() // function pass exactly same entity same object at add time so always make a seperate function and use the name only in add/delete
+                -->
+
+    <!--Phases of event (capturing phase, at target phase, bubbling phase)  -->
+
+    <!-- Event Object - event trigger -> addEventListner as a argument(event object is given to listener) -> utilize to see the event -->
+
+    
+                <!-- <div>
+                    <p id="fpara">Hello Ji</p>
+                    Default Action - 
+                    <a href="https://www.google.com/" id="fanchor">Click here</a>
+                </div> -->
+
+
+            <div id="wrapper">
+                <p id="fpara">first <span>first span</span></p>
+                <p id="spara">second <span>second span</span></p>
+                <p id="tpara">third <span>third span</span></p>
+                <p id="fopara">fourth <span>fourth span</span></p>
+            </div>  
+            
+            <!-- DOM ContentLoaded ( use to add dynamic script ) -->
+    <script src="index.js"></script>
+</body>
+</html>
